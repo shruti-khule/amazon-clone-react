@@ -1,0 +1,29 @@
+.checkout{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: white;
+}
+
+  
+.checkout__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.checkout__ad{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+
+}
+.checkout__items{
+    width:76%;
+}
+.checkout__title{
+    margin:10px 50px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding-bottom: 15px;
+}
+.checkout__subtotal{
+    display: flex;
+}
