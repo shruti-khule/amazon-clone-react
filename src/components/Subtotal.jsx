@@ -2,11 +2,10 @@ import React,{useContext} from 'react'
 import styles from'../styles/Subtotal.module.css'
 import CurrencyFormat from 'react-currency-format';
 import { StateContext } from '../Stateprovider';
-import { useNavigate } from 'react-router-dom';
 
 function Subtotal() {
 const {cart}=useContext(StateContext);
-const navigate =useNavigate('')
+
 
 const getTotalPrice=(cart)=>{
   return cart?.reduce((amount,item)=>amount+item.price,0) || 0;
@@ -34,7 +33,7 @@ const getTotalPrice=(cart)=>{
           thousandSeparator={true}
           prefix={"€"}
         />
-        <button className={styles.subtotal__button} onClick={()=>navigate("/payment")}>Proceed to Checkout</button>
+        <button className={styles.subtotal__button}>Proceed to Checkout</button>
         
       
     </div>

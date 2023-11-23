@@ -31,6 +31,10 @@ function Footer() {
                 <span>Amazon Pay</span>
                 <span>Fulfilment by Amazon</span>
                 <span>Host on Amazon Hub</span>
+
+
+
+
                 </div>
             <div>
                 <h6>Amazon Pament Methods</h6>

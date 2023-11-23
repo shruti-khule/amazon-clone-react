@@ -12,7 +12,6 @@ function Home() {
 
             <div className={styles.home__row}> 
             <Products 
-            id="12312312"
             heading="Top Deal"
             title="Amazon Fire TV Stick 4K, watch TV and movies in vibrant 4K Ultra HD, Dolby Atmos support for surround sound (1. Generation)"
             price={34.99}
@@ -21,7 +20,6 @@ function Home() {
             />
 
             <Products
-            id="12212212"
             heading="Discover Echo Devices"
             title="Echo Dot (5th Gen, 2022 release) | smart speaker with Alexa | Charcoal"
             price={64.99}
@@ -32,7 +30,6 @@ function Home() {
 
             <div className={styles.home__row}> 
             <Products
-            id="12333212"
             heading="Home Decor"
             title="Dorma Sofa with Sleep Function, Easy Assembly, Modern Design, Upholstered Furniture."
             price={229.49}
@@ -40,7 +37,6 @@ function Home() {
             rating={4}/>
 
             <Products
-            id="12345678"
             heading="Kitchen & Home"
             title="Storage container set, including Peeler the most stylish way to keep vegetables fresh even longer"
             price={29.99}
@@ -48,7 +44,6 @@ function Home() {
             rating={4}/>
 
             <Products
-            id="12345567"
             heading="Fashion"
             title="Tommy Hilfiger Damen T-Shirt Hilfiger C-NK Reg Tee mit Rundhalsausschnitt"
             price={49.99}
@@ -59,7 +54,7 @@ function Home() {
             </div>
             <div className={styles.home__row}> 
             <Products 
-             id="87654321"
+            
              heading="Best Seller in Books"
              title="Kafka on the Shore"
              price={19.99}
