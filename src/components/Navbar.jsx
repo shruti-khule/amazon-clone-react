@@ -21,11 +21,8 @@ const handleSignIn=()=>{
 
   return (
     <div className={styles.nav}>
-    
       <Link to="/">
-
         <img src={amazon_logo} alt="amazon_logo" className={styles.nav__logo} />
-
       </Link>
       
       <div className={styles.nav__search}>
@@ -39,10 +36,12 @@ const handleSignIn=()=>{
           <span className={styles.nav__optionLineTwo}>{user? 'Sign Out':'Sign In'}</span>
         </div>
         </Link>
+        <Link to="/orders" className={styles.nav__optionlink}>
         <div className={styles.nav__option}>
         <span className={styles.nav__optionLineOne}>Returns</span>
           <span className={styles.nav__optionLineTwo}>& Orders</span>
         </div>
+        </Link>
         <div className={styles.nav__option}>
         <span className={styles.nav__optionLineOne}>Your</span>
           <span className={styles.nav__optionLineTwo}>Prime</span>

@@ -5,10 +5,6 @@ import image_ad from '../assets/amazon__ad.jpeg'
 import CartProducts from './CartProducts'
 import { StateContext } from '../Stateprovider';
 
-
-
-
-
 function Checkout() {
   const {cart,user}=useContext(StateContext);
 
@@ -28,7 +24,6 @@ function Checkout() {
                   title={item.title}
                   id={item.id}
                   />
-
               ))}
 
             </div>

@@ -6,9 +6,18 @@ import Home from './components/Home';
 import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import Payment from './components/Payment';
+import Orders from './components/Orders';
 import { auth } from '../src/firebase';
 import { useContext,useEffect } from 'react';
 import { StateDispatchContext } from './Stateprovider';
+import { loadStripe } from '@stripe/stripe-js';
+import {Elements} from '@stripe/react-stripe-js'
+
+const Public_Key='pk_test_51OAnK1ATRsyOI0XmKZCsoOdjxDkmWmdNxpRs0FDlO6CNBaF6JpLxsfY9SZSLpe3k9IN2FoKiQK5GXJRltc2aQYP300dU0LvORe'
+
+const promise=loadStripe(Public_Key);
+
 
 
 function App() {
@@ -40,19 +49,15 @@ function App() {
 
       <Router>
 
-      <Routes>
-
-      
+      <Routes>      
         <Route path="/" element={<><Navbar/> <Home/><Footer/></>}></Route>
         <Route path="/checkout" element={<><Navbar/> <Checkout/><Footer/></>}></Route>
         <Route path="/login" element={<Login/>}></Route>
-
-
+        <Route path="/payment" element={<><Navbar/><Elements stripe={promise}><Payment/> </Elements></>}></Route>
+        <Route path="/orders" element={<><Navbar/><Orders/></>}></Route>
       </Routes>
     
     </Router>
-
-      
     </div>
 
   );

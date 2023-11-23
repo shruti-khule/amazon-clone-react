@@ -21,9 +21,7 @@ function Login() {
            navigate("/");
         }
 
-
     }
-
     const register=(e)=>{
         e.preventDefault()
         auth.createUserWithEmailAndPassword(email,password).then(
@@ -31,11 +29,9 @@ function Login() {
                 console.log(auth);}
         )
         .catch(error => alert(error.message))
-
     }
 
   return (
-
     <div className={styles.login__container}>
         <Link to="/">
             <img src='https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' alt='amazon__logo' className={styles.login__logo}></img>

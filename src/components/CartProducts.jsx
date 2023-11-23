@@ -3,7 +3,7 @@ import styles from'../styles/CartProduct.module.css'
 import { StateDispatchContext} from '../Stateprovider';
 
 
-function CartProducts({id,image,price,rating,title}) {
+function CartProducts({id,image,price,rating,title,hideButton}) {
     const dispatch=useContext(StateDispatchContext);
 
     const removeFromCart = ()=>{
@@ -29,7 +29,10 @@ function CartProducts({id,image,price,rating,title}) {
             ))
             }
             </div>
+            {!hideButton && (
             <button onClick={removeFromCart} className={styles.cartproducts__button}>Remove from Basket</button>
+
+            )}
 
         </div>
       
